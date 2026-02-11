@@ -3,58 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yue Xue">
-    <title> Yue Xue - Software Engineer</title>
+    <meta name="description" content="Yue Xue - CS Student Portfolio">
+    <title>Yue Xue — CS Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div>
-        <h2>Hello world</h2>
-    </div>
-    
-    <div class="biography">
-        <img 
-            alt="here should be an image" 
-            src="assets/yuexue.jpeg"
-            class="yuexue"
-        />
-        <p>Hello I am Yue Xue ~</p>
-    </div>
-    
-    <div class="education">
-        <p>Education</p>
-    </div>
-    
-    <div class="skills">
-        <p>Skills</p>
-        
-        <ul>
-            <li> Languages: C, C++, Java, Python </li>
-            <li>Backend: Spring Boot, REST APIs</li>
-            <li>Database: MySQL, MongoDB, Redis</li>
-            <li>Web & Frameworks: Javascript, Typescript, React, React Native, Node.js, Express</li>
-            <li>Tools: Git, Docker, Bash, Make, CMake</li>
-            <li>OS: Linux</li>
-        </ul>
-        
-    </div>
-    
-    <div class="experience">
-        <p>Experience</p>
-        <p>Activities</p>
-    </div>
-    
-    <div>
-        <p>project 1</p>
-    </div>
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-    <div>
-        <p>project 2</p>
-    </div>
-    
+    <main>
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting"><span class="prompt">$</span> whoami</p>
+                    <h1>Yue Xue</h1>
+                    <p class="hero-tagline">CS Student · Software Engineer</p>
+                    <p class="bio">
+                        I'm a computer science student passionate about building systems and solving problems with code.
+                        I enjoy working on full-stack projects, algorithms, and everything in between.
+                    </p>
+                    <div class="hero-links">
+                        <a href="mailto:your.email@example.com" class="link">email</a>
+                        <a href="https://github.com" target="_blank" rel="noopener" class="link">github</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="link">linkedin</a>
+                    </div>
+                </div>
+                <div class="hero-photo">
+                    <img src="assets/yuexue.jpeg" alt="Yue Xue" class="profile-photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section">
+            <h2><span class="section-prompt">//</span> Resume</h2>
+            <div class="resume-card">
+                <p class="resume-desc">View or download my resume.</p>
+                <iframe src="resume.pdf" width="100%" height="1000px" style="border: none;"></iframe>
+                <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-resume">View PDF</a>
+                <a href="resume.pdf" download class="btn btn-outline">Download</a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2><span class="section-prompt">//</span> Skills</h2>
+            <p class="hero-greeting"><span class="prompt">$</span> ls -al /skills</p>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Languages</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-tag">Java</span></li>
+                    <li><span class="skill-tag">C/C++</span></li>
+                    <li><span class="skill-tag">Python</span></li>
+                    <li><span class="skill-tag">Go</span></li>
+                    <li><span class="skill-tag">Lua</span></li>
+                    <li><span class="skill-tag">JavaScript/TypeScript</span></li>
+                    <li><span class="skill-tag">SQL</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Frameworks & Libraries</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-tag">Spring Boot</span></li>
+                    <li><span class="skill-tag">React/React Native</span></li>
+                    <li><span class="skill-tag">Vue.js</span></li>
+                    <li><span class="skill-tag">Node.js</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Tools & Platforms</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-tag">Git</span></li>
+                    <li><span class="skill-tag">Bash</span></li>
+                    <li><span class="skill-tag">Linux</span></li>
+                    <li><span class="skill-tag">Docker</span></li>
+                    <li><span class="skill-tag">AWS</span></li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-category-title">Other</h3>
+                <ul class="skill-list">
+                    <li><span class="skill-tag">Data Structures</span></li>
+                    <li><span class="skill-tag">Algorithms</span></li>
+                    <li><span class="skill-tag">Machine Learning</span></li>
+                    <li><span class="skill-tag">REST APIs</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2><span class="section-prompt">//</span> Projects</h2>
+
+            <div class="project-category">
+                <h3 class="category-title">Featured</h3>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h4 class="project-name">Project One</h4>
+                        <p class="project-desc">Short description of your first project. Tech stack, problem solved, or key outcome.</p>
+                        <div class="project-meta">
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <a href="#" class="project-link">View →</a>
+                    </article>
+                    <article class="project-card">
+                        <h4 class="project-name">Project Two</h4>
+                        <p class="project-desc">Short description of your second project. What you built and why it matters.</p>
+                        <div class="project-meta">
+                            <span class="tag">React</span>
+                            <span class="tag">Node</span>
+                        </div>
+                        <a href="#" class="project-link">View →</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3 class="category-title">Other Work</h3>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h4 class="project-name">Project Three</h4>
+                        <p class="project-desc">Another project description. Coursework, hackathon, or side project.</p>
+                        <div class="project-meta">
+                            <span class="tag">C++</span>
+                        </div>
+                        <a href="#" class="project-link">View →</a>
+                    </article>
+                    <article class="project-card">
+                        <h4 class="project-name">Project Four</h4>
+                        <p class="project-desc">Brief description. Links to repo or demo can go in the View link.</p>
+                        <div class="project-meta">
+                            <span class="tag">Rust</span>
+                            <span class="tag">CLI</span>
+                        </div>
+                        <a href="#" class="project-link">View →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><span class="prompt">$</span> echo "Built with &lt;3"</p>
+    </footer>
 </body>
 </html>
