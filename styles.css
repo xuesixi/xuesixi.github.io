@@ -296,7 +296,7 @@ body {
 
 /* --- Projects --- */
 .projects-section {
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: 0 auto;
     padding: 0 1.5rem 4rem;
 }
@@ -317,8 +317,9 @@ body {
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
     gap: 1.25rem;
 }
 
@@ -328,6 +329,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     transition: border-color 0.2s;
+    max-width: 30%;
 }
 
 .project-card:hover {
